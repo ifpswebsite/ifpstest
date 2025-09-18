@@ -289,3 +289,9 @@ footer {
 	font-weight: bold;
 	cursor: pointer;
 }
+.about-logo {
+    display: block;
+    margin: -20px auto 1rem auto; /* move up 20px */
+    max-width: 150px;
+    height: auto;
+}
