@@ -236,6 +236,11 @@ footer {
 		align-items: center;
 	}
 }
+@media (max-width: 768px) {
+    .about-logo {
+        width: 60%;  /* smaller on mobile */
+    }
+}
 
 /* Gallery Section */
 .gallery-grid {
@@ -291,7 +296,7 @@ footer {
 }
 .about-logo {
     display: block;
-    margin: -20px auto 1rem auto; /* move up 20px */
-    max-width: 150px;
-    height: auto;
+    margin: 1rem auto; /* centers the image and adds spacing above/below */
+    max-width: 150px;  /* adjust size as needed */
+    height: auto;      /* maintain aspect ratio */
 }
