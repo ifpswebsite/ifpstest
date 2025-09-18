@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Fire Protection Systems</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">International Fire Protection Systems</div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                ☰
+            </button>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services2.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>International Fire Protection Systems</h1>
+                <p>Protecting lives and property with world-class fire safety solutions.
+                    <br> Phone: (520)604-6425</p>
+                <a href="services2.html" class="btn">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="introduction">
+        <div class="container box">
+            <h2>About us</h2>
+            <p style="font-size: 1.2rem;">
+                IFPS is a locally owned fire protection company in Nogales, Arizona, with over 25 years of experience. Founded by former firefighters, we provide reliable and affordable fire protection for homes and businesses. We specialize in the installation, maintenance,
+                and inspection of fire extinguishers, sprinkler systems, and commercial kitchen fire suppression systems. Our professional, knowledgeable team ensures your property is protected to the highest standards, giving you peace of mind.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <div class="service-grid">
+        <div class="card">
+            <img src="extinguishers.jpg" alt="Fire extinguishers">
+            <h3>Fire Extinguishers</h3>
+            <p>We install and maintain a comprehensive range of fire extinguishers suited to your business needs, ensuring compliance with industry standards and delivering reliable, high-quality protection.</p>
+        </div>
+        <div class="card">
+            <img src="sprinklersystems.jpg" alt="Sprinkler systems">
+            <h3>Fire Supression Systems</h3>
+            <p>We provide installation and maintenance of fire suppression systems, including sprinklers, backflow systems, and kitchen fire suppression systems, ensuring reliable protection for your business</p>
+        </div>
+        <div class="card">
+            <img src="maintenance.jpg" alt="Service & Maintenance">
+            <h3>Service & Maintenance</h3>
+            <p>We provide inspections, maintenance and support to keep all systems fully operational and compliant with fire protection standards, with 24/7 emergency service when you need it most.</p>
+        </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="why-grid">
+                <div class="card">
+                    <h3>Experience Information</h3>
+                    <p>For more than 25 years, we’ve provided high-quality fire safety solutions that meet all industry and Arizona fire protection standards. Trusted by businesses and homeowners for our reliability, professionalism, and dedication to safety.
+                </div>
+                <div class="card">
+                    <h3>Compliant with Regulations</h3>
+                    <p>We provide top-quality installations and services that meet industry and NFPA standards. Licensed class CR-16, we specialize in dual fire protection systems, ensuring your property is fully compliant and safely protected.</p>
+                </div>
+                <div class="card">
+                    <h3>Communication Methods</h3>
+                    <p>As a local company, we pride ourselves on fast, responsive service and clear communication. We offer affordable pricing, free quotes, a one-year warranty on fire sprinkler services, and 24/7 emergency support to keep your property
+                        safe.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container box">
+            <h2>Contact Us</h2>
+            <p style="font-size: 1.2rem;">
+                Have any questions? Get in touch with our team today.
+                <br> Phone: (520)604-6425
+                <br> Email: infoifpsgroup@gmail.com
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <p><strong>Contact & Business Information</strong>
+                    <br> 251 E Patagonia Hwy A, Nogales, AZ 85621
+                    <br> infoifpsgroup@gmail.com | (520)604-6425</p>
+            </div>
+            <div class="footer-center">
+                <p>&copy; 2025 IFPS. All rights reserved.</p>
+            </div>
+            <div class="footer-nav">
+                <a href="index.html">Home</a> |
+                <a href="services2.html">Services</a> |
+                <a href="#contact">Contact</a> |
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav
+          const menuToggle = document.querySelector(".menu-toggle");
+          const navLinks = document.querySelector(".nav-links");
+        
+          menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+          });
+    </script>
+</body>
+
+</html>

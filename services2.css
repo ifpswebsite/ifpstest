@@ -1,0 +1,238 @@
+/* Reset defaults */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Body */
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background: #fff;
+}
+
+/* Container */
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Header */
+header {
+	background: #b30000;
+	color: #fff;
+	padding: 0.8rem 0;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+.logo {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 2rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: #ffd6d6;
+}
+
+/* Hamburger button */
+.menu-toggle {
+	display: none;
+	font-size: 1.8rem;
+	background: none;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* Mobile nav */
+@media (max-width: 768px) {
+	nav ul {
+		display: none;
+		flex-direction: column;
+		background: #b30000;
+		position: absolute;
+		top: 60px;
+		right: 0;
+		width: 200px;
+		border-radius: 0 0 6px 6px;
+	}
+
+	nav ul.active {
+		display: flex;
+	}
+
+	.menu-toggle {
+		display: block;
+	}
+}
+
+/* Hero */
+.hero {
+	position: relative;
+	padding: 3rem 0;
+	background: url("heroimage.png") no-repeat center center/cover;
+	color: #fff;
+}
+
+.hero-content {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	min-height: 300px;
+}
+
+.hero-text h1 {
+	color: #c00000;
+	font-weight: bold;
+	font-size: 40px;
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text p {
+	color: #000;
+	font-size: 20px;
+}
+
+.btn {
+	display: inline-block;
+	background: #b30000;
+	color: #fff;
+	padding: 0.6rem 1.2rem;
+	border-radius: 4px;
+	text-decoration: none;
+	margin-top: 1rem;
+	transition: background 0.3s ease;
+}
+
+.btn:hover {
+	background: #800000;
+}
+
+/* Fire Extinguishers Section */
+.fire-extinguishers {
+	padding: 3rem 0;
+}
+
+.fire-extinguishers .box {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 2rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.fire-extinguishers h2 {
+	text-align: center;
+	margin-bottom: 1.5rem;
+	color: #b30000;
+	font-size: 30px;
+}
+
+/* Content inside the box */
+.fire-extinguishers-content {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 2rem;
+}
+
+.fire-extinguishers-content p {
+	flex: 2;
+	font-size: 1.2rem;
+	text-align: left;
+	margin-top: 0;
+
+}
+
+
+.fire-extinguishers-content img {
+	flex: 1;
+	max-width: 180px;
+	height: auto;
+	border-radius: 6px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+	.fire-extinguishers-content {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.fire-extinguishers-content p {
+		text-align: center;
+	}
+
+	.fire-extinguishers-content img {
+		max-width: 100%;
+	}
+
+
+}
+
+
+/* Footer */
+footer {
+	background: #b30000;
+	color: #fff;
+	padding: 2rem 0;
+}
+
+.footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.footer-content>div {
+	flex: 1;
+	margin: 0.5rem;
+}
+
+.footer-nav a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 0.5rem;
+}
+
+.footer-nav a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+	.footer-content {
+		flex-direction: column;
+		align-items: center;
+	}
+}

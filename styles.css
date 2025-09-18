@@ -1,0 +1,291 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Header */
+header {
+	background: #b30000;
+	color: #fff;
+	padding: 0.8rem 0;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #fff;
+}
+
+/* Nav */
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 2rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: #ffd6d6;
+}
+
+/* Hamburger button */
+.menu-toggle {
+	display: none;
+	font-size: 1.8rem;
+	background: none;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* Mobile nav */
+@media (max-width: 768px) {
+	nav ul {
+		display: none;
+		flex-direction: column;
+		background: #b30000;
+		position: absolute;
+		top: 60px;
+		right: 0;
+		width: 200px;
+		border-radius: 0 0 6px 6px;
+	}
+
+	nav ul.active {
+		display: flex;
+	}
+
+	.menu-toggle {
+		display: block;
+	}
+}
+
+/* Hero */
+.hero {
+	padding: 3rem 0;
+	background: url("heroimage.png") no-repeat center center/cover;
+	color: #fff;
+	position: relative;
+}
+
+.hero-content {
+	display: flex;
+	align-items: center;
+	min-height: 300px;
+	position: relative;
+	z-index: 2;
+}
+
+.hero-text h1 {
+	color: #c00000;
+	font-weight: bold;
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+	font-size: 40px;
+}
+
+.hero-text p {
+	color: #000;
+	font-size: 20px;
+}
+
+/* Buttons */
+.btn {
+	display: inline-block;
+	background: #b30000;
+	color: #fff;
+	padding: 0.6rem 1.2rem;
+	border-radius: 4px;
+	text-decoration: none;
+	margin-top: 1rem;
+	transition: background 0.3s ease;
+}
+
+.btn:hover {
+	background: #800000;
+}
+
+/* Sections */
+section {
+	padding: 3rem 0;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 1.5rem;
+	color: #b30000;
+	font-size: 30px;
+}
+
+.box {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 2rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+	text-align: center;
+}
+
+/* Service & Why grids */
+.service-grid,
+.why-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	justify-content: center;
+}
+
+.card {
+	flex: 1 1 300px;
+	max-width: 350px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	padding: 1.5rem;
+	text-align: center;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 4px;
+	margin: 0 auto 1rem;
+}
+
+.card h3 {
+	color: #b30000;
+}
+
+.card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+	background: #b30000;
+	color: #fff;
+	padding: 2rem 0;
+}
+
+.footer-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.footer-content>div {
+	flex: 1;
+	margin: 0.5rem;
+}
+
+.footer-nav a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 0.5rem;
+}
+
+.footer-nav a:hover {
+	text-decoration: underline;
+}
+
+/* Stack footer on mobile */
+@media (max-width: 768px) {
+	.footer-content {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+/* Gallery Section */
+.gallery-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1rem;
+}
+
+.gallery-grid img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Lightbox Modal */
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 2000;
+	padding-top: 60px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	justify-content: center;
+	align-items: center;
+}
+
+.lightbox-content {
+	max-width: 90%;
+	max-height: 80%;
+	border-radius: 6px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox .close {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: bold;
+	cursor: pointer;
+}
